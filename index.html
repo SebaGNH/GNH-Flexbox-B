@@ -4,9 +4,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/color/344/ok--v1.png" type="image/x-icon">
+  <title>Flexbox GNH</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #292929;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .containerBody {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .containerFlex{
+      background-color: #525252;
+      width: 600px;
+    }
+
+    .containerBox{
+      background-color: #404040;
+      width: 500px;
+      height: 500px;
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+      background:#f79256;
+      border: 2px solid #9C3E07;
+      font-size: 40px;
+      text-align: center;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="containerBody">
+
+    <!-- Contenedor base -->
+    <style>      
+    </style>
+    <div class="containerFlex">
+      <h3>Contenedor Base</h3>
+      <div class="containerBox">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div>
+
+
+    <!-- Contenedor Flex -->
+    <style>
+      .flex-row{
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+    <div class="containerFlex">
+      <h3>Contenedor Base</h3>
+      <div class="containerBox flex-row">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+  </div>
 </body>
 </html>
