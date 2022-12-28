@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="https://img.icons8.com/color/344/ok--v1.png" type="image/x-icon">
+  <link rel="shortcut icon" href="https://img.icons8.com/color/512/maximize-window.png" type="image/x-icon">
   <title>Flexbox GNH</title>
   <style>
     *{
@@ -41,7 +41,7 @@
 
     }
     .container-description h3 {
-
+      text-align: left; /* verificarlo */
     }
 
     .containerBox{
@@ -62,6 +62,7 @@
 </head>
 <body>
   <div class="containerBody">
+
 
     <!-- Contenedor base -->
     <style>  
@@ -209,6 +210,362 @@
     </div> 
 
 
+    <!-- flex-flow: row wrap; -->
+    <style>
+      .flex-flow-row-wrape{
+        display: flex;
+        flex-flow: row wrap; 
+      }  
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>flex-flow: row wrap;</h3>
+        <p>Es la combinación de flex-direction y flex-wrap</p>
+      </div>
+      <div class="containerBox flex-flow-row-wrape">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+      </div>
+    </div> 
+
+
+    <!-- justify-content:center -->
+    <style>  
+      .justify-content-center{
+        display: flex;
+        /* flex-flow: row wrap;  *//* Creo que lo puedo borrar */
+        justify-content:center;
+      }
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>justify-content:center</h3>
+      </div>
+      <div class="containerBox justify-content-center">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div> 
+
+    <!-- justify-content: flex-start -->
+    <style> 
+    .justify-content-flex-start{
+      display: flex;
+     /*  flex-flow: row wrap; */ 
+      justify-content: flex-start;
+    } 
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>justify-content: flex-start</h3>
+        <p>Viene por defecto</p>
+      </div>
+      <div class="containerBox justify-content-flex-start">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div> 
+
+
+    <!-- justify-content:flex-end -->
+    <style> 
+    .justify-content-flex-start{
+      display: flex;
+     /*  flex-flow: row wrap; */ 
+      justify-content:flex-end;
+    } 
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>justify-content:flex-end</h3>
+        <p>Estas vienen a sustituir los float</p>
+      </div>
+      <div class="containerBox justify-content-flex-start">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div> 
+
+
+    <!-- justify-content:space-between -->
+    <style> 
+    .justify-content-space-between{
+      display: flex;
+     /*  flex-flow: row wrap; */ 
+      justify-content:space-between;
+    } 
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>justify-content:space-between</h3>        
+        <p>Pone el espacio sobrante entre cada uno de los elementos</p>
+      </div>
+      <div class="containerBox justify-content-space-between">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div> 
+
+
+    <!-- justify-content:space-around -->
+    <style> 
+    .justify-content-space-arround{
+      display: flex;
+     /*  flex-flow: row wrap; */ 
+      justify-content:space-around;
+    } 
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>justify-content:space-around</h3>
+        <p>Divide el espacio al inicio y al final también</p>
+      </div>
+      <div class="containerBox justify-content-space-arround">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div> 
+
+
+    <!-- align-items: flex-start -->
+    <style>
+    .aling-items-flex-start{
+      display: flex;
+      align-items: flex-start;
+    }  
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>align-items: flex-start</h3>
+      </div>
+      <div class="containerBox aling-items-flex-start">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div> 
+
+
+    <!-- align-items: flex-end -->
+    <style>
+    .aling-items-flex-end{
+      display: flex;
+      align-items: flex-end;
+    }  
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>align-items: flex-end</h3>
+      </div>
+      <div class="containerBox aling-items-flex-end">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div> 
+
+
+    <!-- align-items: center -->
+    <style>
+    .aling-items-center{
+      display: flex;
+      align-items: center
+    }  
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>align-items: center</h3>
+      </div>
+      <div class="containerBox aling-items-center">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div> 
+
+
+    <!-- align-items: stretch; -->
+    <style>
+    .aling-items-strech{
+      display: flex;        
+      align-items: stretch;
+    }  
+    .box-stretch{
+      width: 100px;
+     /*  height: 100px; */ /* Sin limitar el height */
+      background:#f79256;
+      border: 2px solid #9C3E07;
+      font-size: 40px;
+      text-align: center;
+      color: #fff;
+    }
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>align-items: stretch;</h3>
+        <p>Sin limitar el height ocupa todo el alto</p>
+        <p>La caja ocupa el 100% del contenedor si no lo limitamos</p>
+      </div>
+      <div class="containerBox aling-items-strech">
+        <div class="box-stretch">1</div>
+        <div class="box-stretch">2</div>
+        <div class="box-stretch">3</div>
+        <div class="box-stretch">4</div>
+      </div>
+    </div>
+
+
+    <!--  -->
+    <style>
+      .align-items-baseline{
+        display: flex;
+        align-items: baseline;
+      }  
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>Contenedor Base</h3>
+        <p>Alinea el contenedor en base a la fuente "piso del texto, no se ve a simple vista</p>
+      </div>
+      <div class="containerBox align-items-baseline">
+        <div class="box">1</div>
+        <div class="box" style="font-size: 100px;">2</div>
+        <div class="box">3</div>
+        <div class="box" style="font-size: 70px;">4</div>
+      </div>
+    </div> 
+
+
+    <!-- align-content: flex-end; -->
+    <style> 
+      .aling-content-flex-end{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+      } 
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>flex-wrap: wrap;</h3>
+        <p>No es compatible con align-items</p>
+        <p>IMPORTANTE: Esta propiedad solo funciona cuando hay mas de una linea de elementos.</p>
+        <h3>align-content: flex-end</h3>
+      </div>
+      <div class="containerBox aling-content-flex-end">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+      </div>
+    </div> 
+
+
+    <!-- align-content: flex-start -->
+    <style> 
+      .aling-content-flex-start{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+      } 
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>flex-wrap: wrap;</h3>
+        <h3>align-content: flex-start</h3>
+      </div>
+      <div class="containerBox aling-content-flex-start">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+      </div>
+    </div> 
+
+
+    <!-- align-content: center; -->
+    <style> 
+      .aling-content-center{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+      } 
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>flex-wrap: wrap;</h3>
+        <h3>align-content: center</h3>
+      </div>
+      <div class="containerBox aling-content-center">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+      </div>
+    </div> 
+
+
+    <!-- align-content: stretch; -->
+    <style> 
+      .aling-content-stretch{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+      } 
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>flex-wrap: wrap;</h3>
+        <h3>align-content: stretch</h3>
+      </div>
+      <div class="containerBox aling-content-stretch">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+      </div>
+    </div> 
+
+
+
+
+
+
+
     <!-- Footer -->
   </div>
 </body>
@@ -230,26 +587,6 @@
   </div>
 </div> 
 -->
-
-
-<style>
-  .contenedor05{
-      display: flex;
-      flex-wrap: wrap;
-  }
-</style>
-  <h3>display: flex</h3>
-  <h3>flex-wrap: wrap</h3>
-<div class="contenedor05 contenedorPrincipal">
-  <div class="caja">1</div>
-  <div class="caja">2</div>
-  <div class="caja">3</div>
-  <div class="caja">4</div>
-  <div class="caja">5</div>
-  <div class="caja">6</div>
-  <div class="caja">7</div>
-</div>
-
 
 
 
