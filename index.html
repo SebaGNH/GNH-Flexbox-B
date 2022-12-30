@@ -56,6 +56,7 @@
       background-color: #404040;
       width: 250px;
       height: 250px;
+      margin-bottom: 10px;
     }
     .box{
       width: 50px;
@@ -660,6 +661,34 @@
         </div>
       </div> 
 
+      <!--  -->
+      <style>  
+        .flex-gap{
+          display: flex;
+          /* flex-flow: row wrap; */
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          align-content: flex-start;
+          gap: 5px;
+        }
+      </style>
+      <div class="containerFlex">      
+        <div class="container-description">
+          <h3>gap: 5px;</h3>
+        </div>
+        <div class="containerBox flex-gap">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+          <div class="box">4</div>
+          <div class="box">5</div>
+          <div class="box">6</div>
+          <div class="box">7</div>
+          <div class="box">8</div>
+        </div>
+      </div> 
+
     </div>
 
 
@@ -711,7 +740,8 @@
         <div class="container-description">
           <h3>flex-grow: 1;</h3>
           <p>Hace crecer el elemento con proporción a los demás, para que abarquen el 100% del tamaño</p>
-        <p>Si ponermos flex-grow: 2 crecerá x2 comparandoló con los base o 1, crece el doble</p>
+          <p>flex-grow: 0; es el valor por defecto</p>
+          <p>Si ponermos flex-grow: 2 crecerá x2 comparandoló con los base o 1, crece el doble, es un tamaño relativo</p>
         </div>
         <div class="containerBox flex">
           <div class="box">1</div>
@@ -744,6 +774,8 @@
           <div class="box flex-shrink">3</div>
           <div class="box">4</div>
         </div>
+        <p>Flex-shrink viene a ser el contrario de grow, se usa para redimensionar los tamaños minimos</p>
+        flex-shrink: 10 se contrae 10 veces en proporción a los otros elementos
       </div> 
 
 
@@ -770,6 +802,8 @@
           <div class="box flex-basis">3</div>
           <div class="box">4</div>
         </div>
+        <p>Se usa para dar un tamaño inicial y al achicar se redimenciona proporcionalmente evitando desbordar el elemento del contenedor</p>
+        <p>es para que mantengan el tamaño a menos que tengan que redimencionarse</p>
       </div> 
 
 
