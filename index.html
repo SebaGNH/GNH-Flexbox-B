@@ -249,25 +249,6 @@
 
 
     <div class="contenedor-tipo">
-      <!-- justify-content:center -->
-      <style>  
-        .justify-content-center{
-          display: flex;
-          /* flex-flow: row wrap;  *//* Creo que lo puedo borrar */
-          justify-content:center;
-        }
-      </style>
-      <div class="containerFlex">      
-        <div class="container-description">
-          <h3>justify-content:center</h3>
-        </div>
-        <div class="containerBox justify-content-center">
-          <div class="box">1</div>
-          <div class="box">2</div>
-          <div class="box">3</div>
-          <div class="box">4</div>
-        </div>
-      </div> 
 
       <!-- justify-content: flex-start -->
       <style> 
@@ -312,6 +293,26 @@
         </div>
       </div> 
 
+
+      <!-- justify-content:center -->
+      <style>  
+        .justify-content-center{
+          display: flex;
+          /* flex-flow: row wrap;  *//* Creo que lo puedo borrar */
+          justify-content:center;
+        }
+      </style>
+      <div class="containerFlex">      
+        <div class="container-description">
+          <h3>justify-content:center</h3>
+        </div>
+        <div class="containerBox justify-content-center">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+          <div class="box">4</div>
+        </div>
+      </div> 
 
       <!-- justify-content:space-between -->
       <style> 
@@ -497,6 +498,33 @@
 
 
     <div class="contenedor-tipo">
+
+    <!-- align-content: flex-start -->
+    <style> 
+      .aling-content-flex-start{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+      } 
+    </style>
+    <div class="containerFlex">      
+      <div class="container-description">
+        <h3>flex-wrap: wrap;</h3>
+        <h3>align-content: flex-start</h3>
+      </div>
+      <div class="containerBox aling-content-flex-start">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+      </div>
+    </div> 
+
+
       <!-- align-content: flex-end; -->
       <style> 
         .aling-content-flex-end{
@@ -508,36 +536,11 @@
       <div class="containerFlex">      
         <div class="container-description">
           <h3>flex-wrap: wrap;</h3>
+          <h3>align-content: flex-end</h3>
           <p>No es compatible con align-items</p>
           <p>IMPORTANTE: Esta propiedad solo funciona cuando hay mas de una linea de elementos.</p>
-          <h3>align-content: flex-end</h3>
         </div>
         <div class="containerBox aling-content-flex-end">
-          <div class="box">1</div>
-          <div class="box">2</div>
-          <div class="box">3</div>
-          <div class="box">4</div>
-          <div class="box">5</div>
-          <div class="box">6</div>
-          <div class="box">7</div>
-          <div class="box">8</div>
-        </div>
-      </div> 
-
-      <!-- align-content: flex-start -->
-      <style> 
-        .aling-content-flex-start{
-          display: flex;
-          flex-wrap: wrap;
-          align-content: flex-start;
-        } 
-      </style>
-      <div class="containerFlex">      
-        <div class="container-description">
-          <h3>flex-wrap: wrap;</h3>
-          <h3>align-content: flex-start</h3>
-        </div>
-        <div class="containerBox aling-content-flex-start">
           <div class="box">1</div>
           <div class="box">2</div>
           <div class="box">3</div>
